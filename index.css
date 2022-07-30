@@ -286,19 +286,19 @@ input:focus, textarea:focus{
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: darkseagreen;
+    color: RGB(169, 204, 141);
     background: rgb(26, 105, 66);
 }
 
 ::selection {
-    color: darkseagreen;
+    color: RGB(169, 204, 141);
     background: rgb(26, 105, 66);
 }
 
 .submit{
     border-radius: 15px;
     background-color: rgb(26, 105, 66);
-    color:RGB(169, 204, 141);;
+    color:RGB(169, 204, 141);
     font-family: inherit;
     font-weight: inherit;
     font-size:1.5em;
@@ -322,6 +322,16 @@ input:focus, textarea:focus{
 .form_text{
     margin: auto;
     height: fit-content;
+}
+
+.submit:hover{
+    border-color: RGB(26, 105, 66);
+    background-color: RGB(169, 204, 141);
+    color:RGB(26, 105, 66);
+
+    -webkit-transition: border-color, color, background-position 200ms ease;
+    -moz-transition: border-color, color, background-position 200ms ease;
+    -o-transition: border-color, color, background-position 200ms ease;
 }
 
 
