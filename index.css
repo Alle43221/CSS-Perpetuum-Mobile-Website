@@ -2,7 +2,6 @@ body{
     margin:0;
     padding:0;
     background: rgb(33, 33, 33);
-    //background: rgb(26, 26, 26);
     min-height: 100%;
     position: relative;
     display: block;
@@ -19,7 +18,7 @@ html{
 .navigation--links{
     display:flex;
     flex-direction:row;
-    background: rgb(83, 162, 100);
+    background: rgb(100, 164, 70);
     font-size: 1.5em;
     padding: 5px 40px 5px 5px;
     margin:0;
@@ -45,10 +44,16 @@ html{
 }
 
 .navigation--link:hover {
-    -webkit-transition: text-shadow 300ms ease;
-    -moz-transition: text-shadow 300ms ease;
-    -o-transition: text-shadow 300ms ease;
-    text-shadow: 0 0 25px rgb(26, 105, 66);
+    -webkit-transition: text-shadow, color 200ms ease;
+    -moz-transition: text-shadow, color 200ms ease;
+    -o-transition: text-shadow, color 200ms ease;
+
+    color: RGB(169, 204, 141);
+    text-shadow: -1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px -1.5px 0 rgb(26, 105, 66),
+    -1.5px -1.5px 0 rgb(26, 105, 66);
+
 }
 
 .logo{
@@ -61,13 +66,17 @@ html{
 }
 
 .active{
-    border-bottom: 4px solid rgb(33, 33, 33);
+    color: RGB(169, 204, 141);
+    text-shadow: -1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px -1.5px 0 rgb(26, 105, 66),
+    -1.5px -1.5px 0 rgb(26, 105, 66);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
 
 .footer{
-    background: rgb(83, 162, 100);
+    background: rgb(100, 164, 70);
 
     display: flex;
     flex-direction: column;
@@ -97,6 +106,11 @@ html{
 
 .icon{
     cursor: pointer;
+}
+
+.icon:hover{
+    -webkit-filter: drop-shadow(0px 0px 5px  RGB(169, 204, 141));
+    filter: drop-shadow(0px 0px 5px RGB(169, 204, 141));
 }
 
 .insta-icon{
@@ -140,9 +154,9 @@ html{
     width: 60%;
     margin: 4rem auto;
     vertical-align: center;
-    background: rgba(143, 188, 143, 0.55);
+    background: rgba(100, 164, 70, 0.75);
     border-radius: 10px;
-    border: 10px solid rgba(83, 162, 100, 0.7);
+    border: 10px solid rgba(26, 105, 66, 0.9);
     font-family: 'Trispace', sans-serif;
     display:flex;
     height: 35rem;
@@ -165,7 +179,7 @@ html{
 }
 
 input,  textarea{
-    background-color: darkseagreen;
+    background: RGB(169, 204, 141);
     border: 2px solid rgb(33, 33, 33);
     border-radius: 5px;
 
@@ -180,8 +194,21 @@ input,  textarea{
     overflow-x: hidden;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(26, 105, 66, 0.9);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(26, 105, 66, 0.9);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(26, 105, 66, 0.9);
+}
+
 .maps-link{
-    color: darkseagreen;
+    color: RGBA(169, 204, 141);
     text-decoration: none;
     margin: 0 0 0 5px;
 }
@@ -224,7 +251,7 @@ label{
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(83, 162, 100) ;
+    background: rgb(100, 164, 70) ;
     border-radius: 100px;
 }
 
@@ -242,11 +269,12 @@ p{
 }
 
 hr{
-    height: 3px;
-    border:0;
-    background-color: darkseagreen;
+    height: 5px;
+    border: 0;
+    background-color: RGBA(169, 204, 141, 0.7);
     width: available;
     margin: 0 ;
+    border-radius: 5px;
 }
 
 input:focus, textarea:focus{
@@ -270,12 +298,12 @@ input:focus, textarea:focus{
 .submit{
     border-radius: 15px;
     background-color: rgb(26, 105, 66);
-    color:darkseagreen;
+    color:RGB(169, 204, 141);;
     font-family: inherit;
     font-weight: inherit;
     font-size:1.5em;
     height: fit-content;
-    border: 2px solid darkseagreen;
+    border: 2px solid RGB(169, 204, 141);;
     padding: 0.6rem;
     margin: auto;
     cursor: pointer;
