@@ -352,13 +352,11 @@ input:focus, textarea:focus{
     margin: 1rem 0;
 }
 
-.choice{
-    display: flex;
-    flex-direction: row;
-    justify-items: left;
-}
-
 .adress\&location{
     margin: 35% 0;
+}
+.option{
+    color: #212121;
+    margin: 0.3rem 0;
 }
 
