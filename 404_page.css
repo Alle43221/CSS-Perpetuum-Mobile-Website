@@ -2,14 +2,13 @@ body{
     margin:0;
     padding:0;
     background: rgb(33, 33, 33);
-    min-height: 50%;
     position: relative;
     display: block;
     overflow-x: hidden;
+    height: 100%;
 }
-
 html{
-    height: 50%;
+    height: 100%;
 }
 
 ::-webkit-scrollbar-track {
