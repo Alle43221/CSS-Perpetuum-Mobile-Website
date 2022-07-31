@@ -5,7 +5,7 @@ body{
     min-height: 100%;
     position: relative;
     display: block;
-    height: 55rem;
+    height: 98rem;
     overflow-x: hidden;
 }
 
@@ -159,8 +159,9 @@ html{
     border: 10px solid rgba(26, 105, 66, 0.9);
     font-family: 'Trispace', sans-serif;
     display:flex;
-    height: 35rem;
+    height: fit-content;
     font-weight: bold;
+
 }
 
 .contact-info{
@@ -178,7 +179,7 @@ html{
     width: 125%;
 }
 
-input,  textarea{
+.to-be-completed{
     background: RGB(169, 204, 141);
     border: 2px solid rgb(33, 33, 33);
     border-radius: 5px;
@@ -217,9 +218,13 @@ input,  textarea{
     text-decoration: underline;
 }
 
-label{
+.label{
     font-weight: bold;
     color: #222222;
+}
+
+.option{
+    font-weight: normal;
 }
 
 .message {
@@ -266,6 +271,7 @@ label{
 
 p{
     margin: 5px ;
+    color:#212121;
 }
 
 hr{
@@ -334,4 +340,25 @@ input:focus, textarea:focus{
     -o-transition: border-color, color, background-position 200ms ease;
 }
 
+.multiple_choice {
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.choice{
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+}
+
+.adress\&location{
+    margin: 35% 0;
+}
 

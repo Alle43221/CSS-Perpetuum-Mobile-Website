@@ -33,12 +33,9 @@
             <hr>
 
             <div class="form_text">
-            <br>
-            <p >Completează formularul alăturat </p>
-            <p>Aici ne puteți scrie un email.</p>
-            <br>
-            <br>
+            <p >Completează formularul alăturat pentru un posibil loc în echipă.</p>
 
+                <div class="adress&location">
             <div class="email_section">
                 <img alt="Icon for the email" class="location_icon" src="pictures/location.png">
                 <p class="email_text">Strada Mihai Eminescu 5, Satu Mare 440014, SM, România</p>
@@ -48,9 +45,8 @@
                 <img alt="Icon for the location" class="email_icon" src="pictures/email.png">
                 <p>perpetuum.mobile@eminescusm.ro</p>
             </div>
+                </div>
 
-            <br>
-            <br>
             <p>Nu sunteți siguri de locație? </p>
             <a href="https://www.google.com/maps/place/Colegiul+Na%C8%9Bional+Mihai+Eminescu+Satu+Mare/@47.7893913,22.8741361,17z/data=!3m1!4b1!4m5!3m4!1s0x473805cdaac2883b:0x49b9e88a38ed23fe!8m2!3d47.7893834!4d22.8763575" target="_blank" class="maps-link">Ne găsiți pe Google Maps!</a>
             </div>
@@ -59,35 +55,77 @@
 
         <div class="form">
          <form>
-             <label>Nume complet
-                <input type="text" placeholder="Popdan Gheorghe">
+             <label class="label">Nume complet
+                <input type="text" class="to-be-completed" placeholder="Popdan Gheorghe">
              </label>
 
-             <label>Email
-                 <input type="text" placeholder="popdan_gheorghe@gmail.com">
+             <label class="label">Email
+                 <input type="email" class="to-be-completed" placeholder="popdan_gheorghe@gmail.com">
              </label>
 
-             <label>Număr de telefon
-                 <input type="text" placeholder="07n_am_cartela">
+             <label class="label">Număr de telefon
+                 <input type="text"  class="to-be-completed" placeholder="07n_am_cartela">
              </label>
 
-             <label>Liceul
-                 <input type="text" placeholder="Liceul la care studiezi" size="500" >
+             <label class="label">Liceul
+                 <input type="text" class="to-be-completed" placeholder="Liceul la care studiezi">
              </label>
 
-             <label>Username și id Discord
-                 <input type="text" placeholder="BigChungus#6969" size="500" >
+             <label class="label">Username și ID Discord
+                 <input type="text" class="to-be-completed" placeholder="BigChungus#6969">
              </label>
 
-             <label>Mesaj
-                 <textarea placeholder="Bună ziua! Vă contactez în legătură cu..." class="message"></textarea>
+
+             <div class="container">
+                 <div class="multiple_choice">
+
+                     <p class="item">Rol</p>
+                     <div class="choice">
+                         <input type="radio">
+                         <p class="option">Membru</p>
+                     </div>
+                     <div class="choice">
+                         <input type="radio">
+                         <p class="option">Voluntar</p>
+                     </div>
+
+                 </div>
+
+                 <div class="multiple_choice">
+
+                     <p class="item">Departament</p>
+                     <div class="choice">
+                         <input type="radio">
+                         <p class="option">Programare</p>
+                     </div>
+                     <div class="choice">
+                         <input type="radio">
+                         <p class="option">Proiectare & Design</p>
+                     </div>
+                     <div class="choice">
+                         <input type="radio">
+                         <p class="option">Mecanică</p>
+                     </div>
+                     <div class="choice">
+                         <input type="radio">
+                         <p class="option">Public Relations</p>
+                     </div>
+                 </div>
+
+             </div>
+
+
+             <label class="label">Hobby-uri
+                 <textarea placeholder="În timpul liber îmi place să..." class="message to-be-completed"></textarea>
              </label>
 
-             school
-             discord
-             role
-             department
-             #hobbies qualifications
+             <label class="label">Rezultate opținute
+                 <textarea placeholder="Ce lucruri despre tine ne-ar putea impresiona?" class="message to-be-completed"></textarea>
+             </label>
+
+             <label class="label">Mesaj opțional
+                 <textarea placeholder="Mai ai ceva ce ai dori să ne spui?" class="message to-be-completed"></textarea>
+             </label>
          </form>
             <div class="two-buttons">
                 <button class="capcha">Capcha</button>
