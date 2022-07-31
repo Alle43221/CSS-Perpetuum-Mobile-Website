@@ -1,0 +1,175 @@
+body{
+    margin:0;
+    padding:0;
+    background: rgb(33, 33, 33);
+    min-height: 50%;
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+}
+
+html{
+    height: 50%;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(100, 164, 70) ;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:rgb(26, 105, 66);
+    border-radius: 100px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: RGB(169, 204, 141);
+    background: rgb(26, 105, 66);
+}
+
+::selection {
+    color: RGB(169, 204, 141);
+    background: rgb(26, 105, 66);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.navigation--links{
+    display:flex;
+    flex-direction:row;
+    background: rgb(100, 164, 70);
+    font-size: 1.5em;
+    padding: 5px 40px 5px 5px;
+    margin:0;
+    color:rgb(33, 33, 33);
+    border-bottom: solid 4px rgb(26, 105, 66);
+    justify-content: space-between;
+    font-family: 'Trispace', sans-serif;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+}
+
+.sections {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction:row;
+}
+
+.navigation--link{
+    font-weight: bold;
+    margin: 10px 30px 10px 10px;
+    cursor: pointer;
+}
+
+.navigation--link:hover {
+    -webkit-transition: text-shadow, color 200ms ease;
+    -moz-transition: text-shadow, color 200ms ease;
+    -o-transition: text-shadow, color 200ms ease;
+
+    color: RGB(169, 204, 141);
+    text-shadow: -1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px -1.5px 0 rgb(26, 105, 66),
+    -1.5px -1.5px 0 rgb(26, 105, 66);
+
+}
+
+.logo{
+    height: 25%;
+    width: 25%;
+    margin-left: 30px;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 0px 8px #222);
+    filter: drop-shadow(0px 0px 8px #222);
+}
+
+.active{
+    color: RGB(169, 204, 141);
+    text-shadow: -1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px 1.5px 0 rgb(26, 105, 66),
+    1.5px -1.5px 0 rgb(26, 105, 66),
+    -1.5px -1.5px 0 rgb(26, 105, 66);
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    background: rgb(100, 164, 70);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color:rgb(33, 33, 33);
+    font-family: 'Trispace', sans-serif;
+
+    position:absolute;
+    bottom:0;
+    height: 5rem;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: solid 4px rgb(26, 105, 66);
+    margin:0 30px 0 0;
+}
+
+.social-links{
+    display: inline-block;
+    width: 60rem;
+    text-align: center;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.icon:hover{
+    -webkit-filter: drop-shadow(0px 0px 5px  RGB(169, 204, 141));
+    filter: drop-shadow(0px 0px 5px RGB(169, 204, 141));
+}
+
+.insta-icon{
+    width: 4%;
+    margin:0;
+    padding: 0;
+}
+
+.dis-icon{
+    width: 5%;
+    margin:0;
+    padding: 0;
+}
+
+.git-icon{
+    width: 4%;
+    margin:0;
+    padding: 0;
+}
+
+.-icon{
+    width: 4%;
+    margin:0;
+    padding: 0;
+}
+
+.copyright{
+    margin: 0;
+    padding: 0;
+}
+
+.social{
+    padding: 0;
+    margin: 0 75px 0 75px;
+    color:transparent;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
