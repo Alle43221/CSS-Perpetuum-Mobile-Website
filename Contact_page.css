@@ -10,7 +10,7 @@ body{
 }
 
 .contact-page{
-    min-height: 71.25vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +85,6 @@ html{
     1.5px 1.5px 0 rgb(26, 105, 66),
     1.5px -1.5px 0 rgb(26, 105, 66),
     -1.5px -1.5px 0 rgb(26, 105, 66);
-
 }
 
 .logo{
@@ -121,7 +120,7 @@ html{
 
     position:relative;
     bottom:0;
-    height: 5rem;   ////to be fixed
+    height: 5rem;   /*to be fixed*/
     width: 100%;
     padding: 1.5vh 0 1.5vh 0;
     border-top-left-radius: 10px;
@@ -183,8 +182,7 @@ html{
 
 .form-template{
     width: 60%;
-    margin: 4rem auto;
-    vertical-align: center;
+    margin: 0 auto;
     background: rgba(100, 164, 70, 0.75);
     border-radius: 10px;
     border: 10px solid rgba(26, 105, 66, 0.9);
