@@ -4,16 +4,16 @@ body{
     background: rgb(33, 33, 33);
     position: relative;
     overflow-x: hidden;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .contact-page{
-    min-height: 75.5vh;
+    min-height: 59.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 8vh 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -177,7 +177,7 @@ body{
 
 .form-template{
     width: 60%;
-    margin: 4rem auto;
+    margin: 0 auto;
     vertical-align: center;
     background: rgba(100, 164, 70, 0.75);
     border-radius: 10px;
@@ -186,7 +186,6 @@ body{
     display:flex;
     height: fit-content;
     font-weight: bold;
-
 }
 
 .contact-info{
@@ -280,20 +279,6 @@ body{
     float:left;
 }
 
-::-webkit-scrollbar-track {
-    background: rgb(100, 164, 70) ;
-    border-radius: 100px;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background:rgb(26, 105, 66);
-    border-radius: 100px;
-}
-
 p{
     margin: 5px ;
     color:#212121;
@@ -314,16 +299,6 @@ input:focus, textarea:focus{
     2px 2px 0 rgb(26, 105, 66),
     2px -2px 0 rgb(26, 105, 66),
     -2px -2px 0 rgb(26, 105, 66);
-}
-
-::-moz-selection { /* Code for Firefox */
-    color: RGB(169, 204, 141);
-    background: rgb(26, 105, 66);
-}
-
-::selection {
-    color: RGB(169, 204, 141);
-    background: rgb(26, 105, 66);
 }
 
 .submit{

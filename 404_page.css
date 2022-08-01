@@ -4,16 +4,16 @@ body{
     background: rgb(33, 33, 33);
     position: relative;
     overflow-x: hidden;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .contact-page{
-    min-height: 75.5vh;
+    min-height: 59.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 8vh 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -184,6 +184,5 @@ body{
     display:flex;
     font-weight: bold;
     flex-direction: column;
-    height: available;
     position: relative;
 }
