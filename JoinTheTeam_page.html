@@ -52,9 +52,8 @@
             </div>
         </div>
 
-
         <div class="form">
-         <form>
+            <form>
              <label class="label">Nume complet
                 <input type="text" class="to-be-completed" placeholder="Popdan Gheorghe">
              </label>
@@ -64,7 +63,9 @@
              </label>
 
              <label class="label">Număr de telefon
-                 <input type="text"  class="to-be-completed" placeholder="07n_am_cartela">
+                 <input type="tel" class="to-be-completed" placeholder="07n_am_cartela" pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Introdu un număr de telefon de 10 cifre')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')">
              </label>
 
              <label class="label">Liceul
@@ -119,12 +120,12 @@
              <label class="label">Mesaj opțional
                  <textarea placeholder="Mai ai ceva ce ai dori să ne spui?" class="message to-be-completed"></textarea>
              </label>
-         </form>
             <div class="two-buttons">
                 <button class="capcha">Capcha</button>
 
                 <button class="submit">Trimite</button>
             </div>
+            </form>
         </div>
     </div>
     </div>
