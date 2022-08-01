@@ -9,9 +9,35 @@ body{
     flex-direction: column;
 }
 
-html{
-    height: 100%;
-    padding: 0;
+.contact-page{
+    min-height: 75.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(100, 164, 70) ;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:rgb(26, 105, 66);
+    border-radius: 100px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: RGB(169, 204, 141);
+    background: rgb(26, 105, 66);
+}
+
+::selection {
+    color: RGB(169, 204, 141);
+    background: rgb(26, 105, 66);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -90,7 +116,7 @@ html{
 
     position:relative;
     bottom:0;
-    height: 5rem; /*to be fixed*/
+    height: 11.5vh;
     width: 100%;
     padding: 1.5vh 0 1.5vh 0;
     border-top-left-radius: 10px;
