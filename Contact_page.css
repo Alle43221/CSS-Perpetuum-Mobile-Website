@@ -21,6 +21,30 @@ html{
     padding: 0;
 }
 
+::-webkit-scrollbar-track {
+    background: rgb(100, 164, 70) ;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:rgb(26, 105, 66);
+    border-radius: 100px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: RGB(169, 204, 141);
+    background: rgb(26, 105, 66);
+}
+
+::selection {
+    color: RGB(169, 204, 141);
+    background: rgb(26, 105, 66);
+}
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .navigation--links{
@@ -257,20 +281,6 @@ label{
     float:left;
 }
 
-::-webkit-scrollbar-track {
-    background: rgb(100, 164, 70) ;
-    border-radius: 100px;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background:rgb(26, 105, 66);
-    border-radius: 100px;
-}
-
 p{
     margin: 5px ;
 }
@@ -290,16 +300,6 @@ input:focus, textarea:focus{
     2px 2px 0 rgb(26, 105, 66),
     2px -2px 0 rgb(26, 105, 66),
     -2px -2px 0 rgb(26, 105, 66);
-}
-
-::-moz-selection { /* Code for Firefox */
-    color: RGB(169, 204, 141);
-    background: rgb(26, 105, 66);
-}
-
-::selection {
-    color: RGB(169, 204, 141);
-    background: rgb(26, 105, 66);
 }
 
 .submit{
