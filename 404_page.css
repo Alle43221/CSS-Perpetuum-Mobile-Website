@@ -3,12 +3,19 @@ body{
     padding:0;
     background: rgb(33, 33, 33);
     position: relative;
-    display: flex;
     overflow-x: hidden;
     min-height: 100%;
+    display: flex;
     flex-direction: column;
-
 }
+
+.contact-page{
+    min-height: 71.25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 html{
     height: 100%;
     padding: 0;
@@ -36,6 +43,13 @@ html{
 ::selection {
     color: RGB(169, 204, 141);
     background: rgb(26, 105, 66);
+}
+
+.contact-page{
+    min-height: 71.25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -177,13 +191,13 @@ html{
 
 .announcement{
     width: 60%;
-    margin: 4rem auto;
-    vertical-align: center;
     background: rgba(100, 164, 70, 0.75);
     border-radius: 10px;
     border: 10px solid rgba(26, 105, 66, 0.9);
     font-family: 'Trispace', sans-serif;
     display:flex;
-    height: auto;
     font-weight: bold;
+    flex-direction: column;
+    height: available;
+    position: relative;
 }
