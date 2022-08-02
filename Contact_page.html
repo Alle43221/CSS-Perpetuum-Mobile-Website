@@ -45,7 +45,7 @@
 
             <div class="email_section">
                 <img alt="Icon for the location" class="email_icon" src="pictures/email.png">
-                <p class="email_copy">perpetuum.mobile@eminescusm.ro</p>
+                <a href="https://mail.google.com" class="email_copy" target="_blank">perpetuum.mobile@eminescusm.ro</a>
             </div>
 
             <br>
@@ -56,21 +56,21 @@
         </div>
 
         <div class="form">
-         <form>
-             <label>Nume complet
-                <input type="text" placeholder="Popdan Gheorghe">
+            <form>
+             <label class="label invalid">Nume complet
+                <input type="text" class="to-be-completed" placeholder="Popdan Gheorghe" pattern="Popdan Gheorghe">
              </label>
 
-             <label>Email
-                 <input type="text" placeholder="popdan_gheorghe@gmail.com">
+             <label class="label">Email
+                 <input type="email" class="to-be-completed" placeholder="popdan_gheorghe@gmail.com">
              </label>
 
-             <label>Titlu
-                 <input type="text" placeholder="Titlul mesajului" size="500" >
+             <label class="label">Titlu
+                 <input type="text" class="to-be-completed" placeholder="Titlul mesajului" size="500" >
              </label>
 
-             <label>Mesaj
-                 <textarea placeholder="Bună ziua! Vă contactez în legătură cu..." class="message"></textarea>
+             <label class="label">Mesaj
+                 <textarea class="to-be-completed message" placeholder="Bună ziua! Vă contactez în legătură cu..."></textarea>
              </label>
             <div class="two-buttons">
                 <button class="capcha">Capcha</button>

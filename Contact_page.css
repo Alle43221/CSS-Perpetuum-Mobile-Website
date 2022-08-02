@@ -40,11 +40,6 @@ body{
     background: rgb(26, 105, 66);
 }
 
-body{
-    scroll-color: rgb(26, 105, 66) rgb(100, 164, 70);
-    scroll-width:15px;
-}
-
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .navigation--links{
@@ -88,7 +83,6 @@ body{
 }
 
 .logo{
-    height: 25%;
     width: 25%;
     margin-left: 30px;
     cursor: pointer;
@@ -208,7 +202,7 @@ body{
     width: 125%;
 }
 
-input,  textarea{
+.to-be-completed{
     background: RGB(169, 204, 141);
     border: 2px solid rgb(33, 33, 33);
     border-radius: 5px;
@@ -225,10 +219,18 @@ input,  textarea{
 }
 
 .to-be-completed:invalid{
-    box-shadow: -2px 2px 0 #d9442d,
+    box-shadow: -2px 2px 0 #9c2210,
     2px 2px 0 #d9442d,
     2px -2px 0 #d9442d,
     -2px -2px 0 #d9442d;
+}
+
+.invalid{
+    text-shadow: -1px 1px 1px #9c2210,
+    1px 1px 1px #d9442d,
+    1px -1px 1px #d9442d,
+    -1px -1px 1px #d9442d;
+
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -256,7 +258,16 @@ input,  textarea{
 
 .email_copy:hover{
     text-decoration: underline;
-    color: RGBA(169, 204, 141);
+}
+
+.email_copy:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+.email_copy{
+    text-decoration: none;
+    margin: 5px 0;
 }
 
 .label{
@@ -380,9 +391,4 @@ input:focus, textarea:focus{
 .option{
     color: #212121;
     margin: 0.3rem 0;
-}
-
-textarea{
-    scroll-color: rgb(26, 105, 66) rgb(100, 164, 70);
-    scroll-width:15px;
 }

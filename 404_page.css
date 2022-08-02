@@ -40,11 +40,6 @@ body{
     background: rgb(26, 105, 66);
 }
 
-body{
-    scroll-color: rgb(26, 105, 66) rgb(100, 164, 70);
-    scroll-width:15px;
-}
-
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .navigation--links{
@@ -88,7 +83,6 @@ body{
 }
 
 .logo{
-    height: 25%;
     width: 25%;
     margin-left: 30px;
     cursor: pointer;
