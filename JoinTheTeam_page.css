@@ -40,6 +40,11 @@ body{
     background: rgb(26, 105, 66);
 }
 
+body{
+    scroll-color: rgb(26, 105, 66) rgb(100, 164, 70);
+    scroll-width:15px;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .navigation--links{
@@ -242,6 +247,11 @@ body{
     text-decoration: underline;
 }
 
+.email_copy:hover{
+    text-decoration: underline;
+    color: RGBA(169, 204, 141);
+}
+
 .label{
     font-weight: bold;
     color: #222222;
@@ -340,6 +350,11 @@ input:focus, textarea:focus{
     -o-transition: border-color, color, background-position 200ms ease;
 }
 
+.submit:disabled{
+    opacity: 75%;
+    pointer-events: none;
+}
+
 .multiple_choice {
     display: flex;
     flex-direction: column;
@@ -360,3 +375,7 @@ input:focus, textarea:focus{
     margin: 0.3rem 0;
 }
 
+textarea{
+    scroll-color: rgb(26, 105, 66) rgb(100, 164, 70);
+    scroll-width:15px;
+}
