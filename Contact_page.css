@@ -224,6 +224,13 @@ input,  textarea{
     overflow-x: hidden;
 }
 
+.to-be-completed:invalid{
+    box-shadow: -2px 2px 0 #d9442d,
+    2px 2px 0 #d9442d,
+    2px -2px 0 #d9442d,
+    -2px -2px 0 #d9442d;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(26, 105, 66, 0.9);
     opacity: 1; /* Firefox */
