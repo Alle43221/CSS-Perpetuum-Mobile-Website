@@ -275,6 +275,22 @@ hr{
 }
 
 .success-message{
-
+    color:#212121;
+    font-family: inherit;
+    text-align: center;
 }
+
+.form_text{
+    margin: auto;
+    height: fit-content;
+}
+
+.form{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 125%;
+}
+
 

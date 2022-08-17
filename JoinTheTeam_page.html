@@ -53,7 +53,7 @@
 
         <div class="form">
             <form>
-             <label class="label invalid">Nume complet
+             <label class="label">Nume complet
                 <input type="text" class="to-be-completed" placeholder="Popdan Gheorghe" pattern="Popdan Gheorghe">
              </label>
 
@@ -65,8 +65,13 @@
                  <input type="tel" class="to-be-completed" placeholder="07n_am_cartela">
              </label>
 
-             <label class="label">Liceul
-                 <input type="text" class="to-be-completed" placeholder="Liceul la care studiezi">
+             <label class="label">Școală
+                 <select class="to-be-completed dropdown">
+                     <option class="placeholder" value="" disabled selected style="color:rgba(26, 105, 66, 0.9)">Școala la care înveți</option>
+                     <option value="volvo">CNME</option>
+                     <option value="saab">CNIS</option>
+                     <option value="fiat">CFR</option>
+                 </select>
              </label>
 
              <label class="label">Username și ID Discord

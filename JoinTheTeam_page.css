@@ -392,3 +392,16 @@ input:focus, textarea:focus{
     color: #212121;
     margin: 0.3rem 0;
 }
+
+a{
+    color:#212121;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+select{
+    color:rgba(26, 105, 66, 0.9)
+}
