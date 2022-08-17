@@ -405,3 +405,7 @@ a:hover{
 select{
     color:rgba(26, 105, 66, 0.9)
 }
+
+option:checked:not([disabled]){
+    font-weight: bold;
+}
